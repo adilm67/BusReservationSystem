@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "236678148318",
+    "project_id": "brss-6a97a",
+    "storage_bucket": "brss-6a97a.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:236678148318:android:0f1827c891d0057cb4924f",
+        "android_client_info": {
+          "package_name": "com.example.brs"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD2KFPEgJHrpqx-JUYKhyNz-eIHOdeywUQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

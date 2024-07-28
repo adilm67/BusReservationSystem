@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/gradient_background"
+    android:padding="16dp"
+    android:gravity="center_horizontal"
+    tools:context=".Routes">
+
+    <!-- Toolbar with Home Icon (top left) and Back Icon (top right) -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <!-- Home Icon Button -->
+        <Button
+            android:id="@+id/btnHome"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_weight="0.2"
+            android:background="@drawable/back"
+            android:contentDescription="Home"
+            android:padding="10dp" />
+
+        <!-- Spacer View -->
+        <View
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_weight="1" />
+
+        <!-- Back Icon Button -->
+        <Button
+            android:id="@+id/btnBack"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_weight="0.2"
+            android:background="@drawable/home"
+            android:contentDescription="Back"
+            android:padding="10dp" />
+    </LinearLayout>
+
+    <!-- CardView for main content -->
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        app:cardCornerRadius="8dp"
+        app:cardElevation="4dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@color/material_dynamic_neutral0"
+            android:padding="16dp">
+
+            <!-- Select Route TextView -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:fontFamily="sans-serif-smallcaps"
+                android:text="Select Route"
+                android:gravity="center"
+                android:textColor="@android:color/white"
+                android:textSize="30sp"
+                android:textStyle="bold" />
+
+            <!-- Routes Spinner -->
+            <Spinner
+                android:id="@+id/routes"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                android:textColor="@android:color/white" />
+
+            <!-- Times Spinner -->
+            <Spinner
+                android:id="@+id/times"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                android:textColor="@android:color/white" />
+
+            <!-- Select Date EditText -->
+            <EditText
+                android:id="@+id/selectDate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:layout_marginLeft="-15dp"
+                android:layout_below="@id/tripTypeRadioGroup"
+                android:hint="Select Date"
+                android:focusable="false"
+                android:textColor="@color/white"
+                android:clickable="true"/>
+
+            <!-- Trip Type RadioGroup -->
+            <RadioGroup
+                android:id="@+id/tripTypeRadioGroup"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="20dp">
+
+                <!-- Single Trip RadioButton -->
+                <RadioButton
+                    android:id="@+id/single"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="15sp"
+                    android:textStyle="bold"
+                    android:textColor="@android:color/white"
+                    android:text="Single Trip" />
+
+                <!-- Round Trip RadioButton -->
+                <RadioButton
+                    android:id="@+id/doubletrip"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="15sp"
+                    android:textStyle="bold"
+                    android:textColor="@android:color/white"
+                    android:text="Round Trip" />
+            </RadioGroup>
+
+            <!-- Fare EditText -->
+            <EditText
+                android:id="@+id/faretext"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:textSize="20sp"
+                android:textColor="@android:color/white"
+                android:hint="Fare"
+                android:enabled="false"
+                android:background="@drawable/edittext_background"
+                android:padding="10dp" />
+
+            <!-- Select Button -->
+            <Button
+                android:id="@+id/select"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="Select Seat"
+                android:textStyle="bold"
+                android:padding="10dp"
+                android:background="@drawable/button_login_background"
+                android:textColor="@android:color/white" />
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+</LinearLayout>

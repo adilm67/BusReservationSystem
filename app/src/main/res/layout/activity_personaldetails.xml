@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    tools:context=".Routes">
+
+    <!-- Toolbar with Home Icon (top left) and Back Icon (top right) -->
+    <LinearLayout
+        android:layout_marginTop="-150dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <!-- Home Icon Button -->
+        <Button
+            android:id="@+id/btnHome"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_weight="0.2"
+            android:background="@drawable/back"
+            android:contentDescription="Home"
+            android:padding="10dp" />
+
+        <!-- Spacer View -->
+        <View
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_weight="1" />
+
+        <!-- Back Icon Button -->
+        <Button
+            android:id="@+id/btnBack"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_weight="0.2"
+            android:background="@drawable/home"
+            android:contentDescription="Back"
+            android:padding="10dp" />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:fontFamily="sans-serif-smallcaps"
+        android:text="Traveller Details"
+        android:gravity="center"
+        android:textColor="#000"
+        android:textSize="30sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/fullname"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:hint="Full Name"
+        android:inputType="textPersonName"
+        android:textSize="20sp"
+        android:textColor="#000" />
+
+    <EditText
+        android:id="@+id/cnic"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:hint="CNIC"
+        android:inputType="number"
+        android:textSize="20sp"
+        android:textColor="#000" />
+
+    <EditText
+        android:id="@+id/phone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:hint="Phone Number"
+        android:inputType="phone"
+        android:textSize="20sp"
+        android:textColor="#000" />
+
+    <Button
+        android:id="@+id/submit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="Submit"
+        android:padding="10dp"
+        android:textStyle="bold" />
+</LinearLayout>
